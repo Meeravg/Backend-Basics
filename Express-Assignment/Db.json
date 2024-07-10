@@ -1,0 +1,36 @@
+{
+  "todos-Data": [
+    {
+      "todo": "complete the project",
+      "priority": "High",
+      "status": "true"
+    }
+  ],
+  "todos_Data": [
+    {
+      "todo": "complete the assignment",
+      "priority": "High",
+      "status": "false"
+    },
+    {
+      "todo": "Read Notes",
+      "priority": "Low",
+      "status": "true"
+    },
+    {
+      "todo": "Write Notes",
+      "priority": "Low",
+      "status": "true"
+    },
+    {
+      "todo": "Maintain proper Notes",
+      "priority": "Low",
+      "status": "false"
+    },
+    {
+      "todo": "Complete wish Notes",
+      "priority": "Low",
+      "status": "true"
+    }
+  ]
+}
