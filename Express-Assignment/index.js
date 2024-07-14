@@ -31,5 +31,5 @@ server.post("/add-todo", (req, res) => {
 
 // Start the server and listen on port 8000
 server.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is  running on port ${PORT}`);
 });

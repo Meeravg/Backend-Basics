@@ -1,19 +1,17 @@
 {
-  "name": "express",
+  "name": "backend-material",
   "version": "1.0.0",
-  "main": "Todo.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "express": "nodemon Todo.js"
-
-    
+    "start": "nodemon index.js",
+    "dev" : "nodemon Dynamic.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "express": "^4.19.2"
   }
 }
