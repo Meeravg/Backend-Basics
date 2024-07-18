@@ -1,0 +1,134 @@
+1. Retrieve all the documents.
+ans-  db.user.find()     ---it
+
+2. Retrieve the first document.
+ans- mydb> db.user.findOne()
+{
+  _id: ObjectId('6697e30ccb53add8a6e5f806'),
+  first_name: 'Kimbra',
+  last_name: 'Ballentime',
+  gender: 'Female',
+  age: 33,
+  salary: 53090
+}
+
+3. Update the age of the employee to 35 where the first_name is "Sidnee".
+ans- mydb> db.user.updateOne({first_name:"Sidnee"},{$set:{age:35}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+mydb>
+
+4. Change the salary of "Meredeth Groveham" to 55000.
+ans- mydb> db.user.updateOne({first_name:"Meredeth" , last_name:"Groveham"},{$set:{salary:55000}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+5. Update the last name of "Nikolaus" to "Park".
+
+
+6. Update the salary of all employees to 35000 where the age is 37.
+
+
+7. Update the last name of all the employees to "Jamme" where the age is 28.
+
+
+8. For all employees named "Kimbra", add a new field middle_name with the value "Marie".
+ans- mydb> db.user.updateOne({first_name:"Kimbra"},{$set:{middle_name:"Marie"}})
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+
+9. Find all users who are 33 years old.
+
+
+10. Retrieve documents for users with a salary greater than 50000.
+
+
+11. Find all the users where the gender is Female and age is 79.
+ans- mydb> db.user.find({gender:"Female",age:79})
+[
+  {
+    _id: ObjectId('6698a5908930fd1bc8e425bd'),
+    first_name: 'Ricki',
+    last_name: 'Southwood',
+    gender: 'Female',
+    age: 79,
+    salary: 14521
+  },
+  {
+    _id: ObjectId('6698a5908930fd1bc8e425cc'),
+    first_name: 'Guenevere',
+    last_name: "O'Daly",
+    gender: 'Female',
+    age: 79,
+    salary: 56383
+  },
+  {
+    _id: ObjectId('6698a5908930fd1bc8e426a7'),
+    first_name: 'Petronilla',
+    last_name: 'Summerlee',
+    gender: 'Female',
+    age: 79,
+    salary: 46254
+  },
+  {
+    _id: ObjectId('6698a5908930fd1bc8e42744'),
+    first_name: 'Mel',
+    last_name: 'Joannidi',
+    gender: 'Female',
+    age: 79,
+    salary: 10125
+  },
+  {
+    _id: ObjectId('6698a5908930fd1bc8e4276c'),
+    first_name: 'Lilian',
+    last_name: 'Rockwill',
+    gender: 'Female',
+    age: 79,
+    salary: 91105
+  },
+  {
+    _id: ObjectId('6698a5908930fd1bc8e42849'),
+    first_name: 'Veronica',
+    last_name: 'Dod',
+    gender: 'Female',
+    age: 79,
+    salary: 29397
+  },
+  {
+    _id: ObjectId('6698a5908930fd1bc8e428a0'),
+    first_name: 'Brynna',
+    last_name: 'Spurling',
+    gender: 'Female',
+    age: 79,
+    salary: 22493
+  },
+  {
+    _id: ObjectId('6698a5908930fd1bc8e428db'),
+    first_name: 'Rachele',
+    last_name: 'Fardell',
+    gender: 'Female',
+    age: 79,
+    salary: 70882
+  }
+]
+
+
+12. Find all the employees where the first_name is "George" and gender is Male.
+
+
+13. Find all users whose salary is less than or equal to 50000.

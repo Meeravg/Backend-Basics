@@ -26,10 +26,10 @@ server.post("/add-todo", (req, res) => {
     fs.writeFileSync('./Db.json', JSON.stringify(parsedData));
 
     console.log(parsedData);
-    res.send(`Todo Added Successfully: ${JSON.stringify(incomingData)}`);
+    res.send(`Todo Added  Successfully: ${JSON.stringify(incomingData)}`);
 });
 
 // Start the server and listen on port 8000
 server.listen(PORT, () => {
-    console.log(`Server is  running on port ${PORT}`);
+    console.log(`Server is  running  on port ${PORT}`);
 });
