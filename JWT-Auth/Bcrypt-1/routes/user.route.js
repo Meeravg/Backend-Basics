@@ -25,7 +25,7 @@ UserRouter.post('/login', async(req, res) => {
         if(!user){
             res.status(404).json({msg: "Invalid Credentials"})
         }else{
-            const token = jwt.sign({ name: 'meera' }, 'masai');
+            const token = jwt.sign({ name: user.name }, 'masai');
             res.status(200).json({msg: "User Logged In Successfully",
                 token
             })
