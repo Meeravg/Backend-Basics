@@ -18,7 +18,7 @@ app.get("/dashboard", (req, res)=>{
     res.send("This is dashboard")
 })
 
-app.get("/product", (req, res)=>{
+app.get("/product",auth, (req, res)=>{
     res.send("This is product")
 })
 
